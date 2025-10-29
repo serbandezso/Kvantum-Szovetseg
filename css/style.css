@@ -1,0 +1,720 @@
+/* Alapstílusok */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #2c3e2c;
+    --secondary-green: #5a715a;
+    --light-green: #7d8c7d;
+    --accent-green: #8a9b8a;
+    --background: #fefdf8;
+    --light-bg: #f9f7f1;
+    --border-color: #e8e4d8;
+    --text-color: #2c3e2c;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.03"><path d="M50,5 C70,5 95,25 95,50 C95,75 70,95 50,95 C30,95 5,75 5,50 C5,25 30,5 50,5 Z" fill="none" stroke="%232c3e2c" stroke-width="1"/></svg>');
+    padding: 1rem;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgba(254, 253, 248, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Fejléc */
+header {
+    text-align: center;
+    padding: 1rem 0 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo-image {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: grayscale(30%) contrast(120%);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: var(--secondary-green);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-style: italic;
+    color: var(--light-green);
+    font-size: 1.1rem;
+}
+
+/* Navigáció */
+nav {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-green);
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    position: relative;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-green);
+    background-color: var(--light-bg);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--secondary-green);
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 80%;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: 1px solid var(--secondary-green);
+    color: var(--secondary-green);
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 auto;
+    min-height: 44px;
+}
+
+/* Fő tartalom */
+main {
+    padding: 3rem 0;
+    min-height: 60vh;
+}
+
+.page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.page.active {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Kezdőoldal */
+.hero {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.hero-question {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    color: var(--primary-green);
+    font-weight: normal;
+    animation: fadeIn 0.8s ease-in;
+}
+
+.enter-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: transparent;
+    color: var(--secondary-green);
+    text-decoration: none;
+    border: 1px solid var(--secondary-green);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    min-height: 44px;
+    animation: fadeIn 1s ease-in;
+}
+
+.enter-btn:hover {
+    background-color: var(--secondary-green);
+    color: var(--background);
+    transform: translateY(-2px);
+}
+
+/* Általános tartalmi elemek */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green);
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    color: var(--secondary-green);
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.8rem;
+    color: var(--secondary-green);
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.quote {
+    font-style: italic;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 3px solid var(--border-color);
+    background-color: var(--light-bg);
+}
+
+.bible-verse {
+    font-style: italic;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 3px solid var(--accent-green);
+    background-color: #f5f2ea;
+    color: var(--secondary-green);
+    font-size: 1.1rem;
+}
+
+.story-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+/* Új stílusok a kozmikus csomók oldalhoz */
+.cosmic-knots {
+    background: linear-gradient(135deg, #e8e4d8 0%, #d6d2c4 100%);
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    border-radius: 12px;
+    border: 1px solid #c8c4b8;
+    position: relative;
+}
+
+.cosmic-knots::before {
+    content: '🌀';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 2rem;
+    background: var(--background);
+    padding: 0 10px;
+}
+
+/* Kérdések oldal */
+.question {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: var(--light-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.question:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.question[aria-expanded="true"] {
+    background: #f5f2ea;
+    border-color: var(--secondary-green);
+}
+
+.answer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--border-color);
+}
+
+/* Csend oldal */
+.silence-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.silence-symbol {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-green);
+    opacity: 0.7;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.05); }
+    100% { opacity: 0.5; transform: scale(1); }
+}
+
+/* Lábléc */
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--light-green);
+    font-size: 0.9rem;
+}
+
+/* Sikem és Dina speciális stílusok */
+.contrast-box {
+    background-color: #f5f2ea;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.contrast-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.contrast-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.physical, .spiritual {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.physical {
+    border-right: 1px solid var(--border-color);
+}
+
+.physical h3, .spiritual h3 {
+    color: var(--secondary-green);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.symbol {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #a8b8a8;
+}
+
+.conclusion {
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    font-style: italic;
+    color: var(--secondary-green);
+    border: 1px dashed #a8b8a8;
+}
+
+/* Belső Kastély speciális stílusok */
+.castle-section {
+    background: linear-gradient(135deg, var(--light-bg) 0%, #f5f2ea 100%);
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.castle-section::before {
+    content: '🏰';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 2rem;
+    background: var(--background);
+    padding: 0 10px;
+}
+
+.lodging {
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #a8b8a8;
+    transition: transform 0.3s;
+}
+
+.lodging:hover {
+    transform: translateX(5px);
+}
+
+.lodging-number {
+    font-size: 2rem;
+    color: var(--secondary-green);
+    margin-right: 1.5rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.lodging-content {
+    flex: 1;
+}
+
+.lodging-title {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.lodging.first-three {
+    border-left-color: var(--accent-green);
+    background: var(--light-bg);
+}
+
+.lodging.fourth-plus {
+    border-left-color: var(--secondary-green);
+    background: #f0ede4;
+}
+
+.transition-point {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #f5f2ea;
+    border-radius: 8px;
+    border: 2px dashed #a8b8a8;
+}
+
+/* Jézus tanításai speciális stílusok */
+.jesus-teachings {
+    background: linear-gradient(135deg, #f0ede4 0%, #e8e4d8 100%);
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    border-radius: 12px;
+    border: 1px solid #d6d2c4;
+    position: relative;
+}
+
+.jesus-teachings::before {
+    content: '✝';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 1.8rem;
+    background: var(--background);
+    padding: 0 10px;
+    color: var(--secondary-green);
+}
+
+.teaching-point {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.teaching-point:hover {
+    transform: translateY(-2px);
+}
+
+.teaching-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--secondary-green);
+    min-width: 30px;
+}
+
+/* Érzelmi Puszta stílusok */
+.desert-section {
+    background: linear-gradient(135deg, #f5f2ea 0%, #e8e4d8 100%);
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.desert-section::before {
+    content: '🌵';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 2rem;
+    background: var(--background);
+    padding: 0 10px;
+}
+
+.journey-step {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    border-left: 4px solid #5a715a;
+}
+
+.step-number {
+    font-size: 1.5rem;
+    color: #5a715a;
+    margin-right: 1rem;
+    min-width: 30px;
+}
+
+.story-card {
+    background: #f5f2ea;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border: 1px solid #e8e4d8;
+}
+
+/* Lista stílusok */
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Reszponzív design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    .logo-image {
+        max-width: 250px;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .hero-question {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    h4 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.6;
+    }
+    
+    .quote, .bible-verse {
+        font-size: 1rem;
+        padding: 1.2rem;
+    }
+    
+    .enter-btn {
+        font-size: 1.1rem;
+        padding: 15px 35px;
+    }
+    
+    .contrast-item {
+        flex-direction: column;
+    }
+    
+    .physical {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contrast-box {
+        padding: 1.5rem;
+    }
+    
+    header {
+        padding: 1rem 0 1rem;
+    }
+    
+    .logo {
+        font-size: 1.6rem;
+    }
+    
+    .lodging, .teaching-point, .journey-step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .lodging-number, .teaching-icon, .step-number {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .cosmic-knots,
+    .castle-section,
+    .jesus-teachings,
+    .desert-section {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+}
+
+/* Extra kis kijelzőkre */
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+        padding: 0.25rem;
+    }
+    
+    .container {
+        padding: 0.8rem;
+    }
+    
+    .logo-image {
+        max-width: 200px;
+    }
+    
+    .hero-question {
+        font-size: 1.4rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .silence-symbol {
+        font-size: 3rem;
+    }
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Fókusz stílusok a billentyűzet navigációhoz */
+a:focus,
+button:focus {
+    outline: 2px solid var(--secondary-green);
+    outline-offset: 2px;
+}
