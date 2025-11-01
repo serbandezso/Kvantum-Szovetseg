@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Spirituális útmutató a belső kastély útján - kvantum-szövetség, átadás, és misztikus hit">
     <meta name="keywords" content="spiritualitás, belső kastély, kvantum, hit, átadás, misztika, érzelmi puszta">
-    <meta name="description" content="Nem új vallás, nem új rendszer. Csak ébresztő: a keret soha nem a kép. A tutaj nem a part.">
     <title>Magvető - A Belső Kastély Útja</title>
     <style>
         /* Alapstílusok */
@@ -203,20 +202,6 @@
             color: var(--background);
             transform: translateY(-2px);
         }
-
-.disclaimer-box {
-    background: #f5f2ea;
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    border: 2px dashed var(--secondary-green);
-    text-align: center;
-}
-
-.disclaimer-box h3 {
-    color: var(--primary-green);
-    margin-bottom: 1rem;
-}
 
         /* Általános tartalmi elemek */
         h2 {
@@ -534,108 +519,11 @@
     font-size: 1.5rem;
 }
 
-/* KS Kvantum-Szövetség stílusok */
-.ks-hero {
-    text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-}
-
-.ks-title {
-    font-size: 2.5rem;
-    color: var(--primary-green);
-    margin-bottom: 0.5rem;
-    font-weight: normal;
-}
-
-.ks-subtitle {
-    font-size: 1.2rem;
-    color: var(--secondary-green);
-    font-style: italic;
-    margin-bottom: 2rem;
-}
-
-.ks-section {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: var(--light-bg);
-    border-radius: 8px;
-    border-left: 4px solid var(--secondary-green);
-}
-
-.ks-section-title {
-    font-size: 1.5rem;
-    color: var(--primary-green);
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.ks-invitation {
-    text-align: center;
-    padding: 2.5rem;
-    background: linear-gradient(135deg, #f5f2ea 0%, #e8e4d8 100%);
-    border-radius: 12px;
-    margin: 2.5rem 0;
-    border: 1px solid var(--border-color);
-}
-
-.ks-invitation-title {
-    font-size: 1.8rem;
-    color: var(--primary-green);
-    margin-bottom: 1.5rem;
-}
-
-.ks-invitation-text {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.ks-cta {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: transparent;
-    color: var(--secondary-green);
-    text-decoration: none;
-    border: 1px solid var(--secondary-green);
-    border-radius: 30px;
-    font-size: 1.1rem;
-    transition: all 0.3s;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-.ks-cta:hover {
-    background-color: var(--secondary-green);
-    color: var(--background);
-    transform: translateY(-2px);
-}
-
 /* Reszponzív design */
 @media (max-width: 768px) {
     .dialogue {
         padding: 1.5rem;
         margin-bottom: 2rem;
-    }
-    
-    .ks-title {
-        font-size: 2rem;
-    }
-    
-    .ks-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .ks-section {
-        padding: 1.5rem;
-    }
-    
-    .ks-invitation {
-        padding: 2rem;
-    }
-    
-    .ks-invitation-title {
-        font-size: 1.5rem;
     }
 }
 
@@ -862,7 +750,7 @@
         <header>
             <div class="logo-container">
                 <!-- A logó kép helye -->
-                <img src="logo.jpg" alt="KVANTUM SZÖVETSÉG" class="logo-image">
+                <img src="images/magveto-logo.jpg" alt="KVANTUM SZÖVETSÉG" class="logo-image">
                 <h1 class="logo">Magvető</h1>
                 <p class="subtitle">A Belső Kastély Útja - Ahol a magok csendje szól</p>
             </div>
@@ -874,7 +762,6 @@
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#" onclick="showPage('home')" aria-current="page">Kezdőlap</a></li>
-                <li><a href="#" onclick="showPage('ks')">Élő kapcsolat</a></li>
                 <li><a href="#" onclick="showPage('quantum-covenant')">Kvantum-Szövetség</a></li>
                 <li><a href="#" onclick="showPage('surrender')">Az Átadás</a></li>
                 <li><a href="#" onclick="showPage('mag')">A Mag</a></li>
@@ -886,7 +773,6 @@
                 <li><a href="#" onclick="showPage('questions')">Kérdések</a></li>
                 <li><a href="#" onclick="showPage('silence-dialogues')">A Csend Válaszai</a></li>
                 <li><a href="#" onclick="showPage('silence')">Csend</a></li>
-                <li><a href="#raft" onclick="showPage('raft'); return false;">A Tutaj Nem a Part</a></li>
             </ul>
         </nav>
 
@@ -895,83 +781,21 @@
             <div id="home" class="page active">
                 <div class="hero">
                     <p class="hero-question">
-                        "Mi van, ha minden rendszer, ami Istenhez vezet...<br>
-                        ...csak mutat arra, aki már itt van?"
+                        "Mi van, ha minden, amit látsz...<br>
+                        ...csak díszlet?"
                     </p>
+                    <a href="#" class="enter-btn" onclick="showPage('mag')">Belépés a térbe</a>
                 </div>
                 
                 <div class="quote">
-                    "Ez az oldal nem akar semmit helyettesíteni.<br>
-                    Csak ébreszt."
-                </div>
-                
-                <div class="disclaimer-box">
-                    <h3>Nem Útmutató – Hanem Ébresztő</h3>
-                    <p>Mózes törvényei, Jézus tanításai, a szentírások – mind keretek, amik segítenek talpra állni. 
-                    De amikor a keret bálvánnyá válik, elfedi, aki mutatna rajta át.</p>
-                    <p>Itt nincs új rendszer. Csak emlékeztető: <strong>a tutaj nem a part.</strong></p>
+                    "Van, aki a zajban találja meg Isten.<br>
+                    Én a csendben találtam Meg."
                 </div>
                 
                 <p>Ha te is úgy érzed, hogy más vagy, mint a többiek...</p>
                 <p>Ha nehezebben érted az érzelmeket, de mélyebben érzed a Lelket...</p>
                 <p>Ha néha úgy érzed, mintha más nyelven beszélnél, mint a körülötted lévők...</p>
-                
                 <p>Akkor talán a te utad is ide vezet.</p>
-                
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="#" class="enter-btn" onclick="showPage('ks')">Belépés a térbe</a>
-                </div>
-            </div>
-
-            <!-- KS oldal -->
-            <div id="ks" class="page">
-                <div class="ks-hero">
-                    <h1 class="ks-title">Élő kapcsolat</h1>
-                    <p class="ks-subtitle">Kvantum–Szövetség</p>
-                    <p>Az élő kapcsolat emlékezete — amely nem rendszert kínál, hanem meghívást.</p>
-                </div>
-
-                <div class="ks-section">
-                    <h2 class="ks-section-title">A Forrás</h2>
-                    <p>Ez az oldal nem új vallás, nem új tanítás. Csak ébresztés: emlékeztető arra, hogy Isten nem kívül van, hanem bennünk ébred.</p>
-                    <p>A Forrás nem egy fogalom, hanem tapasztalat. Nem elmélet, hanem jelenlét. Aki lecsendesíti az elméjét, annak szívében feltárul: a Forrás mindig is ott volt.</p>
-                </div>
-
-                <div class="ks-section">
-                    <h2 class="ks-section-title">Az Ébresztés</h2>
-                    <p>A történelem tele van tornyokkal és templomokkal, amelyek az ember dicsőségét hirdették. De minden, amit nem Isten hord, elnémul.</p>
-                    <p>Bábel tornya erről beszél. A közös nyelv, ami széthullott, a szeretet nyelve volt. Amikor a hatalom és a verseny vette át a helyét, az emberek többé nem értették egymást.</p>
-                    <p>Ez az oldal arra hív, hogy visszatérj a szeretet nyelvéhez — ahhoz, ami nem szavakban, hanem jelenlétben szól.</p>
-                </div>
-
-                <div class="ks-section">
-                    <h2 class="ks-section-title">Az Ember Útja</h2>
-                    <p>A test fejlődése csak a kezdet. A valódi evolúció a tudaté — az a folyamat, ahogy felismerjük magunkban az isteni szikrát.</p>
-                    <p>Minden civilizáció, amely a hatalomra épített, végül önmagába omlott. A Forrás soha nem az építményekben, hanem az ember szívében lakozott.</p>
-                    <p>A Szövetség nem kollektív szerződés, hanem személyes kapcsolat. Minden ember egy kapu, amin át Isten újra megmutathatja önmagát.</p>
-                </div>
-
-                <div class="ks-section">
-                    <h2 class="ks-section-title">A Belső Fordulat</h2>
-                    <p>Fiatalon az elmémmel és az érzelmeimmel azonosítottam magam. Ettől az életem hullámzó, sötét és fájdalmas lett. A szenvedés elvezetett a határig.</p>
-                    <p>A meditáció megtanított megfigyelni, de még mindig harcoltam. Aztán egy látomásban a sátán hegyként tornyosult elém, én porszemként álltam vele szemben. Mögöttem Isten. Nem azt mondta: „Harcolj”, hanem: „Bízz bennem.”</p>
-                    <p>A hegy ott maradt, de a félelem eltűnt. Megértettem, hogy nem legyőzni kell a sötétséget, hanem nem hinni benne. Nem a küzdelem, hanem a bizalom nyitotta meg bennem az utat a Forrás felé.</p>
-                </div>
-
-                <div class="ks-section">
-                    <h2 class="ks-section-title">A Szövetség</h2>
-                    <p>A Kvantum–Szövetség nem rendszer, nem vallás, nem tanítás. Csak emlékeztető, hogy a Forrással való kapcsolat nem múlt el, csak feledésbe merült.</p>
-                    <p>Amikor a szív elcsendesedik, újra hallani kezdjük egymást a szeretet nyelvén. Ez a Szövetség kezdete — Isten és ember újra találkozik, nem formában, hanem lélekben.</p>
-                    <p>Nem a mi dolgunk megváltoztatni a világot. Ha azon mesterkedünk, újra a küzdés logikájába esünk — ugyanabba a hatalom‑ és versenyjátékba, amely elválasztotta egymástól az embereket. Hívásunk más: elfogadni a világot úgy, ahogy van, és abban a jelen valóságban megélni Isten szeretetét.</p>
-                    <p>Jézus tanítása szerint nem elsősorban a hatalmi struktúrák vagy a vallási intézmények megdöntése a cél, hanem az, hogy bennük és általuk a jelen pillanatban éljük meg a szövetséget. Nem a forma megváltoztatása az első lépés, hanem a szeretet gyakorlása ott, ahol vagyunk.</p>
-                </div>
-
-                <div class="ks-invitation">
-                    <h3 class="ks-invitation-title">Készülj elcsendesedni</h3>
-                    <p class="ks-invitation-text">Nem tanítás — meghívás</p>
-                    <p>Minden ember egy kapu. Nem vallás, nem rendszer — csupán emlékezés arra, hogy a Forrás nem kívül van, hanem bennünk ébred. Ha megállsz, meghallod.</p>
-                    <a href="#" class="ks-cta" onclick="showPage('silence')">Lépj beljebb</a>
-                </div>
             </div>
 
             <!-- A Mag oldal -->
@@ -1004,19 +828,987 @@
                 </div>
             </div>
             
-            <!-- A többi oldal kódja változatlan marad -->
-            <!-- Az Átadás Titka, Kvantum-Szövetség, Jézus Tanítása, A Belső Kastély, Kozmikus Csomók, Érzelmi Puszta, Történetek, Kérdések, A Csend Válaszai, Csend, A Tutaj Nem a Part oldalak -->
+            <!-- Az Átadás Titka oldal -->
+            <div id="surrender" class="page">
+                <h2>Nem Mi Irányítunk – Átadjuk Magunkat</h2>
+                
+                <div class="quote">
+                    "Van egy tudat, ami nagyobb mint mi,<br>
+                    és mi csak átadhatjuk magunkat neki."
+                </div>
+
+                <div class="castle-section">
+                    <h3>A Félreértés Feloldása</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🎮</div>
+                        <div>
+                            <p><strong>Nem azt mondom:</strong> "A kezünkben van a sorsunk"<br>
+                            <strong>Hanem azt:</strong> "A kezünkben van, hogy átadjuk-e magunkat"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🌊</div>
+                        <div>
+                            <p>Nem mi vagyunk a folyó – hanem a <strong>hullámok</strong> benne.<br>
+                            Nem mi teremtjük az áramlást – de <strong>mi dönthetjük el, ellenállunk-e</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contrast-box">
+                    <div class="contrast-item">
+                        <div class="physical">
+                            <h3>Mi Vagyunk a Forrás (Téves)</h3>
+                            <ul>
+                                <li>Én teremtek</li>
+                                <li>Én irányítok</li>
+                                <li>Én döntök</li>
+                                <li>Én vagyok a középpont</li>
+                            </ul>
+                        </div>
+                        <div class="spiritual">
+                            <h3>Átadjuk Magunkat a Forrásnak (Igaz)</h3>
+                            <ul>
+                                <li>Átengedi magát rajtam</li>
+                                <li>Ő irányít én áramlok.</li>
+                                <li>Együtt döntünk</li>
+                                <li>Ő a középpont</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jesus-teachings">
+                    <h3>Hívhatjuk Akárhogy – A Lényeg Ugyanaz</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🙏</div>
+                        <div>
+                            <p><strong>Istennek</strong> – aki Atyánk<br>
+                            <strong>Forrásnak</strong> – ahonnan eredünk<br>
+                            <strong>Tao-nak</strong> – az útnak<br>
+                            <strong>Brahmannak</strong> – a mindenségnek</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🔒</div>
+                        <div>
+                            <p><strong>"Csak annyit tudunk róla, amit ő akar"</strong><br>
+                            Nem felfedezni akarjuk – hanem <strong>megtérni hozzá</strong> – a bizalmunk az amit keresünk..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="castle-section">
+                    <h3>Gyakorlati Átadás – Hogyan Néz Ez Ki?</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🌅</div>
+                        <div>
+                            <p><strong>Reggel:</strong> "Nem én csinálom a napomat – hanem átadom, hogy Ő csinálja általam"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">💭</div>
+                        <div>
+                            <p><strong>Gondolatnál:</strong> "Ha félelmek gyötörnek elmondhatom: Ez az én gondolatom, de rá is bízhatom magamat.- Legyen meg a te akaratod."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🤲</div>
+                        <div>
+                            <p><strong>Nehézségnél:</strong> "Megteszem ami rajtam múllik de tudom, hogy Ő jobban tudja mi jó nekem."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bible-verse">
+                    "Nem én, hanem a Krisztus, aki bennem él."<br>
+                    <strong>– Galata 2:20</strong>
+                </div>
+
+                <div class="transition-point">
+                    <div class="symbol">⚖️</div>
+                    <h3>A Szabad Akarat Igazi Jelentése</h3>
+                    <p>Nem az, hogy mi döntünk – hanem hogy <strong>dönthetünk arról, hogy ki döntsön</strong>.</p>
+                </div>
+
+                <div class="conclusion">
+                    <p>Nem a mi kezünkben van a sorsunk –</p>
+                    <p>a mi kezünkben van, hogy</p>
+                    <p><strong>átadjuk-e a sorsunkat</strong></p>
+                    <p>annak, aki tényleg tudja, mi a jó számunkra.</p>
+                </div>
+            </div>
+
+            <!-- Kvantum-Szövetség oldal -->
+            <div id="quantum-covenant" class="page">
+                <h2>Mi az a Kvantum-Szövetség?</h2>
+                
+                <div class="quote">
+                    "A tudomány és a spiritualitás ugyanazt a valóságot írja le,<br>
+                    csak más-más nyelven beszélnek róla."
+                </div>
+
+                <div class="castle-section">
+                    <h3>Két Nyelv – Egy Valóság</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🔬</div>
+                        <div>
+                            <h4>Kvantumfizika Nyelven</h4>
+                            <p>A valóság alapja nem szilárd anyag, hanem <strong>hullámfüggvények, valószínűségi mezők</strong>. 
+                            Minden összefonódik – ami itt történik, az ott is befolyásol.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🙏</div>
+                        <div>
+                            <h4>Spirituality Nyelven</h4>
+                            <p>A valóság alapja nem anyag, hanem <strong>Isten akarata, a Tao, a Lélek</strong>. 
+                            Minden része egymásnak – ami velem történik, az mindenkire hat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contrast-box">
+                    <div class="contrast-item">
+                        <div class="physical">
+                            <h3>Kvantum Fogalmak</h3>
+                            <ul>
+                                <li><strong>Összefonódás:</strong> Minden kapcsolódik</li>
+                                <li><strong>Hullám-részecske kettősség:</strong> Forma és energia</li>
+                                <li><strong>Megfigyelő hatása:</strong> A tudat alakít</li>
+                                <li><strong>Valószínűségi mező:</strong> Minden lehetséges</li>
+                            </ul>
+                        </div>
+                        <div class="spiritual">
+                            <h3>Spirituális Fogalmak</h3>
+                            <ul>
+                                <li><strong>Mindenek Egysége:</strong> Minden Istenben egy</li>
+                                <li><strong>Test és Lélek:</strong> Anyagi és szellemi</li>
+                                <li><strong>Imádság ereje:</strong> A hit mozgat</li>
+                                <li><strong>Isteni Akarat:</strong> Minden lehetőség Őbenne</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jesus-teachings">
+                    <h3>Gyakorlati Példák a Mindennapokból</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">💭</div>
+                        <div>
+                            <h4>Amikor aggódsz valamiért</h4>
+                            <p><strong>Kvantum szemszögből:</strong> Aggodalmad valószínűségi mezőt teremt, ami vonzza azt, amitől félsz.<br>
+                            <strong>Spirituális szemszögből:</strong> A hitetlenkedés elválaszt Isten békéjétől.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">❤️</div>
+                        <div>
+                            <h4>Amikor szeretsz valakit</h4>
+                            <p><strong>Kvantum szemszögből:</strong> Rezgéseitek összehangolódnak, energiát cseréltek.<br>
+                            <strong>Spirituális szemszögből:</strong> Krisztus szeretete áramlik rajtatok keresztül.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🎭</div>
+                        <div>
+                            <h4>Amikor álmodsz</h4>
+                            <p><strong>Kvantum szemszögből:</strong> Az álmaid a tudatalatti kvantummeződben formálódnak.<br>
+                            <strong>Spirituális szemszögből:</strong> Isten álmokon keresztül szól hozzád.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <p>A Kvantum-Szövetség nem új vallás –</p>
+                    <p>hanem egy új nyelv a régi igazságok megértésére.</p>
+                    <p>Nem választanod kell a tudomány és a hit között –</p>
+                    <p>mert ugyanarról a csodáról beszélnek.</p>
+                </div>
+            </div>
+
+            <!-- Jézus Tanítása oldal -->
+            <div id="jesus" class="page">
+                <h2>Jézus Tanítása – A Misztikus Út</h2>
+                
+                <div class="quote">
+                    "Az én tanítványaim nem a világból valók,<br>
+                    de a világban vannak – mint én."
+                </div>
+
+                <div class="jesus-teachings">
+                    <h3>A Két Szintű Valóság</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">👁️</div>
+                        <div>
+                            <h4>Látszat vs. Lényeg</h4>
+                            <p>Jézus folyamatosan hangsúlyozta: <strong>"Ne a látszat alapján ítéljetek"</strong>. 
+                            A fizikai valóság csak árnyék, a lényegi valóság Isten országa, ami bennünk van.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">⚖️</div>
+                        <div>
+                            <h4>Külső vs. Belső Törvény</h4>
+                            <p>A farizeusok a külső betartásra összpontosítottak. Jézus a <strong>szív állapotára</strong> mutatott rá: 
+                            "Aki haragszik a testvérére..." – a cselekedet előtt a szándék.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="castle-section">
+                    <h3>Jézus Misztikus Megnyilvánulásai</h3>
+                    
+                    <div class="lodging first-three">
+                        <div class="lodging-number">1</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">A Megtérés</div>
+                            <p>"Térjetek meg, mert elközelített a mennyek országa" – nem külső cselekedet, hanem <strong>belső átállás</strong>, 
+                            a tudat más irányba fordulása.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging first-three">
+                        <div class="lodging-number">2</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">A Második Születés</div>
+                            <p>"Ha valaki nem születik újra, nem láthatja Isten országát" – a fizikai lét túllépése, 
+                            a <strong>szellemi létre ébredés</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging first-three">
+                        <div class="lodging-number">3</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">A Belső Istenország</div>
+                            <p>"Isten országa nem észrevehető módon lesz... mert íme, Isten országa bennetek van" – 
+                            nem hely, hanem <strong>lélektani állapot</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging fourth-plus">
+                        <div class="lodging-number">4</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Az Én Átadása</div>
+                            <p>"Aki elveszíti életét érettem, megtalálja azt" – az ego feladása, 
+                            hogy a <strong>valódi Én</strong> megnyilvánulhasson.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging fourth-plus">
+                        <div class="lodging-number">5</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title"> Egyesülés az Atyával</div>
+                            <p>"Én és az Atya egy vagyunk" – a misztikus egyesülés csúcspontja, 
+                            ahol a <strong>kettősség megszűnik</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contrast-box">
+                    <div class="contrast-item">
+                        <div class="physical">
+                            <h3>Hagyományos Kereszténység</h3>
+                            <ul>
+                                <li>Külső szabályok</li>
+                                <li>Hit dogmákban</li>
+                                <li>Mennyei jutalom</li>
+                                <li>Külső üdvözítő</li>
+                                <li>Könyörgés kéréssel</li>
+                            </ul>
+                        </div>
+                        <div class="spiritual">
+                            <h3>Jézus Misztikus Tanítása</h3>
+                            <ul>
+                                <li>Belső átalakulás</li>
+                                <li>Közvetlen tapasztalat</li>
+                                <li>Jelenvaló ország</li>
+                                <li>Belső Krisztus</li>
+                                <li>Csend és meghallgatás</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bible-verse">
+                    "Legyenek egyek, miképpen mi is egyek vagyunk:<br>
+                    én bennük és te bennem, hogy ők is elnyerjék bennünk a tökéletességet."<br>
+                    <strong>– János 17:22-23</strong>
+                </div>
+
+                <div class="conclusion">
+                    <p>Jézus nem csak megváltót küldött –</p>
+                    <p>hanem <strong>útat mutatott</strong> a belső átalakuláshoz.</p>
+                    <p>Nem külső szabályokat adott –</p>
+                    <p>hanem <strong>belső elvet</strong> a szabadsághoz.</p>
+                </div>
+            </div>
+
+            <!-- A Belső Kastély oldal -->
+            <div id="castle" class="page">
+                <h2>A Belső Kastély – Teréz anya útmutatása</h2>
+                
+                <div class="quote">
+                    "Képzelj el egy nagyon szép kastélyt,<br>
+                    amelynek számtalan szobája van –<br>
+                    néhány fent, néhány lent, mások oldalt.<br>
+                    A legközépsőbb helyiségben<br>
+                    a legfontosabb dolog történik:<br>
+                    Isten és a lélek találkozása."
+                </div>
+
+                <div class="castle-section">
+                    <h3>A Kastély Hét Lakosztálya</h3>
+                    
+                    <div class="lodging first-three">
+                        <div class="lodging-number">1</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Első Lakosztály – Az Értelem Kapuja</div>
+                            <p>Itt kezdődik az út. A lélek még a világi dolgokban él, de már érez egy <strong>belső hívást</strong>. 
+                            Isten hív, de a zaj még elnyomja a hangját. Itt dől el, hogy válaszolunk-e a hívásra.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging first-three">
+                        <div class="lodging-number">2</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Második Lakosztály – Az Elhatározás</div>
+                            <p>A lélek meghallja a hívást és <strong>válaszol</strong>. Itt kezdődik az imádság élete. 
+                            Még sok külső segítségre van szükség – könyvek, közösség, szertartások – de már indul a belső út.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging first-three">
+                        <div class="lodging-number">3</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Harmadik Lakosztály – A Rendszeres Imádság</div>
+                            <p>A lélek már <strong>rendszeresen imádkozik</strong>, de még erőfeszítéssel, akarattal. 
+                            Még "én" imádkozom, még nem "rajtam át" imádkozik Isten. Itt jönnek a megpróbáltatások, hogy feladjuk-e.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transition-point">
+                        <div class="symbol">🚪</div>
+                        <h3>Átmenet – A Negyedik Lakosztály Kapuja</h3>
+                        <p>Itt történik a <strong>legnagyobb váltás</strong>: átadjuk az irányítást. 
+                        Nem mi imádkozunk többé – hanem Isten imádkozik bennünk. Ez a "misztikus átadás" kezdete.</p>
+                    </div>
+                    
+                    <div class="lodging fourth-plus">
+                        <div class="lodging-number">4</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Negyedik Lakosztály – A Csend Imádsága</div>
+                            <p>Itt kezdődik a <strong>misztikus út</strong>. Az imádság nem szavakkal történik, hanem csenddel. 
+                            Nem mi tesszük, hanem megengedjük, hogy Isten tegyen bennünk. A "folyamatos imádság" állapota kezd kialakulni.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging fourth-plus">
+                        <div class="lodging-number">5</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Ötödik Lakosztály – Az Egyesülés Előestéje</div>
+                            <p>A lélek már annyira <strong>hozzászokott Isten jelenlétéhez</strong>, hogy már nehezen bírja el a világi dolgokat. 
+                            Már nem a világban él, hanem a világban tartózkodik, miközben valójában Istenben él.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging fourth-plus">
+                        <div class="lodging-number">6</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Hatodik Lakosztály – A Jegyesség Próbája</div>
+                            <p>Isten és a lélek már annyira közel kerültek, hogy a lélek <strong>már-már megérinti Istent</strong>. 
+                            De éppen a közelség miatt válik elviselhetetlenné a távolság. Ez a legfájdalmasabb állapot – 
+                            "már majdnem, de még nem".</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lodging fourth-plus">
+                        <div class="lodging-number">7</div>
+                        <div class="lodging-content">
+                            <div class="lodging-title">Hetedik Lakosztály – A Mátkaság</div>
+                            <p>A lélek végre <strong>egyesül Istennel</strong>. Nem a halál után, hanem itt, ebben az életben. 
+                            Teréz anya szerint nagyon kevesen érik el ezt az állapotot. Itt már nincs "én" és "Te" – 
+                            csak "Mi". A lélek tökéletesen átlátszóvá válik Isten számára.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bible-verse">
+                    "És ímé, Isten hajléka az emberek között,<br>
+                    és Ő velük lakozik, és ők az Ő népe lesznek,<br>
+                    és maga Isten lesz velük, az ő Istenük."<br>
+                    <strong>– Jelenések 21:3</strong>
+                </div>
+
+                <div class="conclusion">
+                    <p>A Belső Kastély nem egy távoli hely –</p>
+                    <p>hanem a <strong>saját lelked mélysége</strong>.</p>
+                    <p>Nem kell elmenned sehova –</p>
+                    <p>csak <strong>be kell fordulnod</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Kozmikus Csomók oldal -->
+            <div id="cosmic-knots" class="page">
+                <h2>Kozmikus Csomók – A Láthatatlan Kapcsolatok</h2>
+                
+                <div class="quote">
+                    "Minden, ami történik,<br>
+                    egy láthatatlan háló szálain rezeg –<br>
+                    és minden rezgés mindent érint."
+                </div>
+
+                <div class="cosmic-knots">
+                    <h3>Mi az a Kozmikus Csomó?</h3>
+                    <p>A Kozmikus Csomók azok a <strong>láthatatlan kapcsolati pontok</strong> a valóság szövetében, 
+                    ahol a fizikai és spirituális világ találkozik. Ahogy a kvantumfizika az összefonódást írja le, 
+                    úgy a spiritualitás ezeket a csomókat ismeri fel.</p>
+                    
+                    <p>Minden gondolat, érzelem, cselekedet egy csomót hoz létre vagy old fel a kozmikus hálón.</p>
+                </div>
+
+                <div class="castle-section">
+                    <h3>Hogyan Működnek a Kozmikus Csomók?</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🕸️</div>
+                        <div>
+                            <h4>Minden Összefügg</h4>
+                            <p>A kozmikus háló mindent összeköt. Ami velem történik, az mindenkire hat, 
+                            és ami mindenkivel történik, az rám is hat. Nincs elkülönített esemény.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">💫</div>
+                        <div>
+                            <h4>Rezgések Teremtenek</h4>
+                            <p>Minden gondolat és érzelem egy rezgést indít el a hálón. 
+                            Hasonló rezgések vonzzák egymást – a félelem félelmet, a szeretet szeretetet.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🔗</div>
+                        <div>
+                            <h4>Csomók Keletkeznek</h4>
+                            <p>Amikor erős érzelmek vagy ismétlődő gondolatok összegyűlnek, 
+                            azok csomókat alkotnak a hálón. Ezek a csomók befolyásolják az áramlást.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contrast-box">
+                    <div class="contrast-item">
+                        <div class="physical">
+                            <h3>Fizikai Világ</h3>
+                            <ul>
+                                <li>Gravitációs erő</li>
+                                <li>Elektromágneses mező</li>
+                                <li>Kvantum összefonódás</li>
+                                <li>Anyagi ok-okozat</li>
+                            </ul>
+                        </div>
+                        <div class="spiritual">
+                            <h3>Spirituális Világ</h3>
+                            <ul>
+                                <li>Karmikus kapcsolatok</li>
+                                <li>Lelkenergia áramlás</li>
+                                <li>Kozmikus csomók</li>
+                                <li>Szellemi ok-okozat</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jesus-teachings">
+                    <h3>Gyakorlati Alkalmazás – Hogyan Dolgozzunk a Csomókkal?</h3>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">🧘</div>
+                        <div>
+                            <h4>Csomófelismerés</h4>
+                            <p>Vedd észre, hol vannak az életedben a "beragadt" minták. 
+                            Ismétlődő problémák, visszatérő érzelmek – ezek jelzik a csomókat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">💆</div>
+                        <div>
+                            <h4>Csomóoldás</h4>
+                            <p>A csomókat nem erővel kell feloldani, hanem <strong>figyelemmel és elfogadással</strong>. 
+                            Aminek ellenállsz, az erősödik. Amit megfigyelsz anélkül, hogy azonosulnál vele, az feloldódik.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teaching-point">
+                        <div class="teaching-icon">✨</div>
+                        <div>
+                            <h4>Új Rezgések Teremtése</h4>
+                            <p>A régi csomók feloldása után új, szabad rezgéseket indíthatsz el: 
+                            <strong>szeretet, béke, öröm, hála</strong>. Ezek új, egészséges kapcsolatokat teremtenek.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bible-verse">
+                    "Mert amiben a szívetek bővelkedik,<br>
+                    abból szól a szátok."<br>
+                    <strong>– Lukács 6:45</strong>
+                </div>
+
+                <div class="conclusion">
+                    <p>A Kozmikus Csomók nem "másvilági" jelenségek –</p>
+                    <p>hanem a <strong>mindennapi valóságunk szerkezete</strong>.</p>
+                    <p>Nem kell hinned bennük –</p>
+                    <p>csak <strong>figyeld meg a hatásukat</strong> az életedben.</p>
+                </div>
+            </div>
+
+            <!-- Érzelmi Puszta oldal -->
+            <div id="desert" class="page">
+                <h2>Az Érzelmi Puszta – Ahol a Lélek Megtisztul</h2>
+                
+                <div class="quote">
+                    "A pusztában nincsenek árnyékok –<br>
+                    mert nincsenek fák, amelyek árnyékot vetnének.<br>
+                    Csak a nap és a homok.<br>
+                    Így van ez az érzelmek pusztajában is –<br>
+                    nincsenek illúziók, amelyek elrejtenék az igazságot."
+                </div>
+
+                <div class="desert-section">
+                    <h3>Mi az az Érzelmi Puszta?</h3>
+                    <p>Az Érzelmi Puszta nem egy hely, hanem egy <strong>lélektani állapot</strong>. 
+                    Ez az a fázis a spirituális úton, amikor a régi érzelmi minták, traumák és feltételezések 
+                    felszínre kerülnek, hogy végre feldolgozhatóak legyenek.</p>
+                    
+                    <p>Mint a sivatagi atyák a 4. században, mi is be kell menjünk a saját lelkünk pusztájába, 
+                    hogy szembenézzünk démonainkkal – ami ma azt jelenti: <strong>szembenézzünk érzelmeinkkel</strong>.</p>
+                </div>
+
+                <div class="castle-section">
+                    <h3>Az Érzelmi Puszta Fázisai</h3>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4>Behatolás a Puszta Szélére</h4>
+                            <p>Elhagyjuk az ismert érzelmi terepeket. Kezdünk kilógni a megszokott mintákból. 
+                            Régi módszereink már nem működnek. <strong>Kényelmetlenség</strong> érzése.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4>A Homokvihar</h4>
+                            <p>Minden felkavaródik. Régi érzelmi sebek felnyílnak. 
+                            Olyan érzések törnek fel, amikről nem is tudtunk. <strong>Kaotikus</strong> állapot.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4>A Csend Közepén</h4>
+                            <p>A vihar elül, de most jön az igazi próbatétel: a <strong>csend és az üresség</strong>. 
+                            Itt nincsenek terelőkövek, nincs külső megerősítés. Csak mi és Isten.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h4>A Forrás Megtalálása</h4>
+                            <p>Ahogy a sivatagban megvannak a rejtett vízfolyások, úgy az érzelmi pusztában is 
+                            megvannak a <strong>belső erőforrások</strong>. Itt tanuljuk meg, hogy nem a külső forrásokra támaszkodjunk.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">5</div>
+                        <div>
+                            <h4>Az Oázis</h4>
+                            <p>Miután megtanultuk, hogy belső forrásból éljünk, rátalálunk az oázisra – 
+                            nem külső hely, hanem <strong>belső állapot</strong>. Itt a lélek megtisztul és újjászületik.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <h3>Személyes Történet – Az Érzelmi Puszta Átélése</h3>
+                    <p>"Amikor először léptem az érzelmi pusztába, azt hittem, meg fogok halni. 
+                    Minden érzelmem felkavarodott, mint egy homokvihar. A félelem, a harag, a szomorúság – 
+                    mind felbukkant egyszerre.</p>
+                    
+                    <p>De ahogy kitartottam a vihar közepén, rájöttem: ezek az érzelmek nem az én valódi énemet jelentik. 
+                    Olyanok voltak, mint a felkavart homok – nem a sivatag valódi természete.</p>
+                    
+                    <p>Amikor a vihar elült, ott ültem a csendben. És abban a csendben hallottam először igazán – 
+                    nem a saját hangomat, hanem Őt."</p>
+                </div>
+
+                <div class="bible-verse">
+                    "Íme, én újabbat cselekszek, már sarjad,<br>
+                    avagy nem ismeritek-é?<br>
+                    Még a pusztában is utat csinálok,<br>
+                    folyókat a kietlenben."<br>
+                    <strong>– Ézsaiás 43:19</strong>
+                </div>
+
+                <div class="conclusion">
+                    <p>Az Érzelmi Puszta nem büntetés –</p>
+                    <p>hanem <strong>megtisztulási folyamat</strong>.</p>
+                    <p>Nem kerülheted el –</p>
+                    <p>de <strong>átmehetsz rajta</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Történetek oldal -->
+            <div id="stories" class="page">
+                <h2>Történetek a Belső Útról</h2>
+                
+                <div class="quote">
+                    "A történetek nemcsak szórakoztatnak –<br>
+                    hanem hidak a megértéshez."
+                </div>
+
+<div class="contrast-box">
+    <div class="contrast-item">
+        <div class="physical">
+            <h3>Dina – A Sérülés Tapasztalata</h3>
+            <p>Dina, Jákob lánya, aki kilépett, hogy "meglátogassa a vidék leányait". 
+            Ő a <strong>sérülés és ártatlanság</strong> szimbóluma - aki bátran kilép a biztonságos környezetből, 
+            de megtapasztalja a világ kegyetlenségét.</p>
             
+            <p>Dinát megsértették - ez a <strong>fizikai és érzelmi sérülés</strong> valósága, 
+            amit mindannyian átélhetünk.</p>
+        </div>
+        <div class="spiritual">
+            <h3>Sikem – A Megértés Lehetősége</h3>
+            <p>Sikem, aki bántalmazta Dinát, de utólag szerelmes lett belé és akarta feleségül venni. 
+            Ő a <strong>megbánás és átalakulás</strong> lehetőségének szimbóluma.</p>
+            
+            <p>Sikem városa, ahol a történet játszódik, nevének jelentése: "váll" vagy "erősség". 
+            A sérüléseink <strong>erősséggé is válhatnak</strong>, ha megértjük őket.</p>
+        </div>
+    </div>
+</div>
+
+<div class="symbol">🔄</div>
+
+<div class="teaching-point">
+    <div class="teaching-icon">👁️</div>
+    <div>
+        <h4>A Sérülés és Megbékélés Dinamikája</h4>
+        <p>A törtében nem csupán erőszakról van szó - hanem arról, hogy <strong>hogyan kezeljük a sérüléseinket</strong>. 
+        Dina testvérei bosszúval válaszoltak, ami csak további erőszakot szült.</p>
+        
+        <p>De a történet mélyebb üzenete: minden sérülésben rejlik a <strong>gyógyulás lehetősége</strong>. 
+        Ahogy a fizikai sérülés (Dina) és a lelki megértés (Sikem városa mint hely) találkozik, 
+        ott nyílik lehetőség az átalakulásra.</p>
+    </div>
+</div>
+
+<div class="conclusion">
+    <p>Minden sérülésünknek van egy Dina és egy Sikem aspektusa –</p>
+    <p>a <strong>fájdalmas tapasztalat</strong> és a <strong>gyógyulás lehetősége</strong>.</p>
+    <p>A bölcsesség nem a bosszúban rejlik –</p>
+    <p>hanem abban, hogy <strong>átalakítsuk a fájdalmunkat megértéssé</strong>.</p>
+</div>
+
+                <div class="story-section">
+                    <h3>A Vak Ember – Aki Megtanult Látni</h3>
+                    
+                    <p>Jézus találkozott egy vak emberrel, akit mindenki bűnösnek tartott, 
+                    mert vaknak született. "Mester, ki vétkezett, ő vagy a szülei, hogy vaknak született?"</p>
+                    
+                    <p>Jézus válasza forradalmi: "Sem ő, sem a szülei nem vétkeztek. 
+                    Hanem hogy az Isten cselekedetei nyilvánvalóvá legyenek ő általa."</p>
+                    
+                    <div class="quote">
+                        "A fizikai vak-ság nem büntetés –<br>
+                        hanem lehetőség a spirituális látás megtanulására."
+                    </div>
+                    
+                    <p>A történet nem a fizikai gyógyulásról szól – hanem arról, 
+                    hogy <strong>minden "hibánk", "gyengeségünk", "sérülésünk" lehetőség</strong> 
+                    Isten dicsőségének megnyilvánulására.</p>
+                    
+                    <div class="conclusion">
+                        <p>Semmi sem véletlen –</p>
+                        <p>minden "hiba" lehetőség.</p>
+                        <p>Semmi sem büntetés –</p>
+                        <p>minden "gyengeség" átjáró.</p>
+                    </div>
+                </div>
+
+                <div class="story-section">
+                    <h3>A Magvető – Aki Megértette a Föld Szívverését</h3>
+                    
+                    <p>Jézus mesélte a magvető példázatát. A magvető kimegy vetni, 
+                    és a mag egy része útra esik, másik kövek közé, harmadik tövis közé, 
+                    negyedik pedig jó földre.</p>
+                    
+                    <div class="quote">
+                        "A mag Isten Igéje –<br>
+                        de a föld a mi szívünk."
+                    </div>
+                    
+                    <p>De van egy mélyebb jelentés is: <strong>mi magunk vagyunk a magvető</strong>. 
+                    A magok a gondolataink, szavaink, cselekedeteink. 
+                    A föld pedig nemcsak a saját szívünk, hanem mindenkinek, akivel érintkezünk.</p>
+                    
+                    <div class="conclusion">
+                        <p>Minden gondolat egy mag –</p>
+                        <p>minden szó egy csirája.</p>
+                        <p>Vigyázz mit vetsz –</p>
+                        <p>mert <strong>minden visszatér</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kérdések oldal -->
+            <div id="questions" class="page">
+                <h2>Kérdések – Amikre Talán Nincs Válasz</h2>
+                
+                <div class="quote">
+                    "A jó kérdés többet ér, mint a könnyű válasz –<br>
+                    mert a kérdés ajtó, a válasz csak egy szoba."
+                </div>
+
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Miért szenvedünk, ha Isten szeret?</h3>
+                    <div class="answer" style="display: none;">
+                        <p>Talán nem azért szenvedünk, hogy megtanuljunk valamit – 
+                        hanem azért, mert a szenvedés elvezet oda, hogy <strong>megtanuljunk nem tanulni</strong>, 
+                        hanem egyszerűen létezni Isten jelenlétében, akár a szenvedés közepette is.</p>
+                    </div>
+                </div>
+
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Hogyan lehet szeretni azt, aki bánt?</h3>
+                    <div class="answer" style="display: none;">
+                        <p>Nem kell érzelmi szeretetet éreznünk – 
+                        elég <strong>elismernünk Isten jelenlétét bennük</strong>, 
+                        még ha jelenleg el van fedve is. A szeretet nem érzelem, hanem elismerés.</p>
+                    </div>
+                </div>
+
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Mi a célja az életnek?</h3>
+                    <div class="answer" style="display: none;">
+                        <p>Talán nem az, hogy valami nagyat érjünk el – 
+                        hanem hogy <strong>rájöjjünk, soha nem is voltunk elválasztva</strong> attól, 
+                        aki igazán vagyunk. A cél nem megtalálni, hanem felismerni.</p>
+                    </div>
+                </div>
+
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Hogyan tudom, hogy Isten beszél hozzám?</h3>
+                    <div class="answer" style="display: none;">
+                        <p>Isten hangja nem a fejedben szól – 
+                        hanem <strong>a csendben rezonál</strong>. 
+                        Nem hang, hanem megértés. Nem információ, hanem átalakulás.</p>
+                    </div>
+                </div>
+
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Miért érzem magam olyan magányosnak a hit útján?</h3>
+                    <div class="answer" style="display: none;">
+                        <p>A magány érzése talán nem a társaság hiánya – 
+                        hanem a <strong>mélység felismerése</strong>. 
+                        Ahogy egyre mélyebbre merülsz a spirituális életben, 
+                        egyre kevesebb ember ért meg. De ebben a mélységben találkozol Vele.</p>
+                    </div>
+                </div>
+
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Hogyan lehet bízni Istenben, amikor minden rosszul alakul?</h3>
+                    <div class="answer" style="display: none;">
+                        <p>A bizalom nem azt jelenti, hogy minden jó lesz – 
+                        hanem hogy <strong>minden része az Útnak</strong>, 
+                        még ami rossznak tűnik is. A bizalom nem a kimenetelben van, 
+                        hanem a folyamatban.</p>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <p>A kérdések nem gyengeség jelei –</p>
+                    <p>hanem a <strong>lelki éhség</strong>.</p>
+                    <p>Ne félj a kérdésektől –</p>
+                    <p>mert minden kérdés <strong>válasz felé vezet</strong>.</p>
+                </div>
+            </div>
+            
+            <!-- A Csend Válaszai oldal -->
+<div id="silence-dialogues" class="page">
+    <h2>A Csend Válaszai</h2>
+    
+    <div class="quote">
+        "Van egy olyan beszélgetés, ami nem hangokkal zajlik,<br>hanem a lélek mélyén..."
+    </div>
+
+    <div class="dialogue-container">
+        <!-- 1. Bizalom -->
+        <div class="dialogue">
+            <div class="person">Ember:</div>
+            <p>Uram, miért félek elengedni, amit szeretek?</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Mert azt hiszed, nélkülem zuhanás van alattad.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Ember:</div>
+            <p>És ha elengedem?</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Akkor én tartalak, csak épp már nem látod a kezemet.</p>
+        </div>
+
+        <!-- 2. Félelem -->
+        <div class="dialogue">
+            <div class="person">Ember:</div>
+            <p>Minden veszélyesnek tűnik. Hogyan maradjak nyugodt?</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Ne próbálj nyugodt lenni, csak maradj jelen.<br>A félelem a jövőt nézi. Én a mostban lakom.</p>
+        </div>
+
+        <!-- 3. Elengedés -->
+        <div class="dialogue">
+            <div class="person">Ember:</div>
+            <p>Uram, fáj, hogy nem sikerül irányítani semmit.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>A fájdalom nem a tehetetlenségedből jön,<br>hanem abból, hogy még mindig irányítani akarsz.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Ember:</div>
+            <p>És ha teljesen elengedem?</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Akkor végre én mozdulhatok benned.</p>
+        </div>
+
+        <!-- 4. Hit -->
+        <div class="dialogue">
+            <div class="person">Ember:</div>
+            <p>Néha nem érzem, hogy itt vagy. Talán csak képzelem az egészet.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Én vagyok a csend, ami a kétely mögött van.<br>A hit nem érzés, hanem emlékezés arra,<br>amit a lélek már tud.</p>
+        </div>
+
+        <!-- 5. Szülő és gyermek -->
+        <div class="dialogue">
+            <div class="person">Ember:</div>
+            <p>Félek, hogy ugyanazt a hibát ismétlem, amit a szüleim.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>A minta nem ítélet, hanem tanító.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Ember:</div>
+            <p>De a gyerekeim is hordozzák a sebet.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>A sebet nem elrejteni kell, hanem fénybe emelni.<br>Amit te tudatosan látsz, azt már nem kell tovább örökíteni.</p>
+        </div>
+
+        <!-- 6. Szeretet -->
+        <div class="dialogue">
+            <div class="person">Ember:</div>
+            <p>Uram, miért nem elég a szeretet? Miért fáj, amikor adni próbálom?</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Mert a seb még nem engedte el a félelmet.<br>Nem tudsz szeretni, amíg tartod magad.<br>A szeretet mozdulat, nem birtok.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Ember:</div>
+            <p>Azt hittem, a szeretet gyógyít.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Gyógyít is, de csak ha megengeded, hogy előbb szembesítsen.<br>A fájdalom az első válaszom — a gyógyulás kezdete.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Ember:</div>
+            <p>Tehát a seb az ajtó.</p>
+            
+            <div class="divider">...</div>
+            
+            <div class="person">Isten:</div>
+            <p>Igen. Ott lép be újra a fény.</p>
+        </div>
+    </div>
+
+    <div class="quote">
+        "A lényeg soha nem hangosabb a csendnél."
+    </div>
+</div>
+
+            <!-- Csend oldal -->
+            <div id="silence" class="page">
+                <div class="silence-page">
+                    <div class="silence-symbol">☰</div>
+                    <h2>Csend</h2>
+                    <p>Néha a legmélyebb válasz</p>
+                    <p>a legnagyobb csend.</p>
+                    <div class="quote">
+                        "Van, aki a zajban találja meg Isten.<br>
+                        Én a csendben találtam Meg."
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
-            <p>"Nem vagyok útmutató – csak ébresztő. A tutajt ne cipeld a hátadon."</p>
-            <p>"Ha éreztél itt valamit – nem véletlen. Isten veled van a te egyedi utadon is."</p>
-            <p><strong>A vallás, út Istenhez.</strong></p>
-            <div style="margin-top: 1rem; font-size: 0.8rem; color: #7d8c7d;">
-                ⋯
-            </div>
-        </footer>
+    <p>"Ha éreztél itt valamit – nem véletlen. Isten veled van a te egyedi utadon is."</p>
+    <div style="margin-top: 1rem; font-size: 0.8rem; color: #7d8c7d;">
+        ⋯
+    </div>
+</footer>
     </div>
 
     <script>
